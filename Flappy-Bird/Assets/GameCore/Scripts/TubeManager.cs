@@ -27,7 +27,7 @@ public class TubeManager : MonoBehaviour {
     #region Other Functions
     private void SpawnPipe() {
         var tube = Pooler.Instance.SpawnFromPool("Tube", transform.position, transform.rotation);
-        workSpace.Set(transform.position.x, Random.Range(-heightPipe, heightPipe + 3f));
+        workSpace.Set(transform.position.x, Random.Range(-heightPipe, heightPipe + 1f));
         tube.transform.position = workSpace;
     }
     #endregion
